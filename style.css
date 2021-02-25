@@ -1,67 +1,220 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+html {
+  height: 100%;
+}
 body {
-    background: #000;
-    color: #fff;
-    font-family: 'EB Garamond', serif;
+  background: #121212;
+  color: #ebebeb;
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
 }
-.agency{
-    margin-top: 200px;
-    font-size: 4em;
-    text-transform: uppercase;
-    text-align: center;
+.bg-dark {
+  background-color: #212121 !important ;
 }
-.agency span{
-    font-size: 3.5em;
-    color:rgb(182, 3, 3);
-    text-transform: uppercase;
+.nav-link {
+  font-size: 24px;
+  margin: 0 20px;
+  font-weight: 600;
 }
-.coming {
-    position: relative;
-    color: rgb(255, 255, 255);
-    font-size: 3em;
-    text-transform: uppercase;
+.nav-link.active {
+  text-decoration: underline;
 }
-.coming:before {
-    content: attr(data-text);
-    position: absolute;
-    overflow: hidden;
-    max-width: 1.5em;
-    white-space: nowrap;
-    color: rgb(182, 3, 3);
-    animation: loading 3s linear;
-    text-transform: uppercase;
+.nav-link.active span {
+  color: #b60303;
+  text-decoration: underline;
 }
-.soon {
-    position: relative;
-    color: rgb(255, 255, 255);
-    font-size: 3em;
-    text-transform: uppercase;
+.nav-link span {
+  color: #b60303;
 }
-.soon:before {
-    content: attr(data-text);
-    position: absolute;
-    overflow: hidden;
-    max-width: 1.2em;
-    white-space: nowrap;
-    color: rgb(182, 3, 3);
-    animation: loading 2.8s linear;
-    text-transform: uppercase;
+.nav-link:hover {
+  text-decoration: underline;
 }
-.btn-col{
-    margin: 3em 0;
-    text-align: center;
+.nav-link:hover span {
+  color: #b60303;
+  text-decoration: underline;
 }
-.btn-ag-primary{
-    border:4px solid rgb(182, 3, 3);
-    color: #fff;
-    font-size: 1.5em;
+.agency-logo {
+  width: 50%;
+  height: auto;
 }
-.btn-ag-primary:hover{
-    background-color: rgb(182, 3, 3);
-    color: #fff;
+
+.agency {
+  margin-top: 200px;
+  font-size: 3em;
+  text-transform: uppercase;
+  text-align: center;
 }
-@keyframes loading {
-    0% {
-        max-width: 0;
-    }
+.agency span {
+  color: #b60303;
+}
+.coming-soon {
+  font-family: "Open Sans", sans-serif;
+  color: #ebebeb;
+  font-size: 2em;
+  text-align: center;
+}
+.btn-col {
+  margin: 3em 0;
+  text-align: center;
+}
+.btn-ag-outlined {
+  border: 2px solid #b60303;
+  color: #ebebeb;
+  font-size: 1.5em;
+}
+.btn-ag-outlined:hover {
+  background-color: #b60303;
+  color: #ebebeb;
+}
+.btn-ag-filled {
+  background-color: #b60303;
+  color: #ebebeb;
+  font-size: 1.5rem;
+  padding: 10px 50px;
+}
+.btn:hover {
+  color: #ebebeb;
+  box-shadow: 0 0 0 0.25rem #b6030340;
+}
+.title {
+  font-size: 3em;
+  font-weight: 700;
+}
+.title span {
+  color: #b60303;
+}
+.unboxed {
+  margin-left: -50px;
+}
+.boxed {
+  border-left: 2px solid #ebebeb;
+}
+.body-text {
+  font-size: 24px;
+  margin: 20px 15px;
+}
+.form-control {
+  background-color: #141414;
+  border: 1px solid #b7b7b7;
+  color: #b7b7b7;
+}
+.form-control:focus {
+  background-color: #1b1b1b;
+  border: 1px solid #b60303;
+  box-shadow: 0 0 0 0.25rem #b6030340;
+  color: #b7b7b7;
+}
+.form-select {
+  background-color: #141414;
+  border: 1px solid #b7b7b7;
+  color: #b7b7b7;
+  background-image: url();
+}
+.form-select:focus {
+  background-color: #1b1b1b;
+  border: 1px solid #b60303;
+  box-shadow: 0 0 0 0.25rem #b6030340;
+  color: #b7b7b7;
+}
+.bg-concert {
+  /* left 5% / 15% 60% repeat-x url("../../media/examples/star.png"); */
+  background: url("/home/kruttika/Desktop/agency/agency/assets/concert-red.jpg")
+    /* image */ center /* position / size */ no-repeat /* repeat */ fixed
+    /* attachment */ #121212;
+}
+.overlay {
+  background: linear-gradient(90deg, #000000, #000000ad, #00000000);
+  height: 100%;
+}
+.text-vertical {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+.agency-main {
+  font-size: 64px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+.agency-main span {
+  color: #b60303;
+}
+.agency-sub {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 5px;
+  line-height: 10vh;
+}
+.agency-sub span {
+  color: #b60303;
+}
+.b-right {
+  border-right: 2px solid #ebebeb;
+}
+.vertical-center {
+  min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+  display: flex;
+  align-items: center;
+}
+ol {
+  list-style-type: none;
+}
+a {
+  color: #ebebeb;
+  text-decoration: none;
+}
+a .active {
+  text-decoration: underline;
+}
+a .active span {
+  color: #b60303;
+  text-decoration: underline;
+}
+a span {
+  color: #b60303;
+}
+a:hover {
+  color: #ebebeb;
+  text-decoration: underline;
+}
+a:hover span {
+  color: #b60303;
+  text-decoration: underline;
+}
+.artist-tile {
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+}
+.inner-img {
+  width: 350px;
+  height: 350px;
+  transition: 0.3s;
+}
+.inner-img:hover {
+  transform: scale(1.1);
+}
+.artist-box {
+  padding: 50px;
+}
+.sub-text {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ebebeb;
+}
+.helper-text {
+  color: #434343;
+  font-size: 28px;
+}
+.agency-links {
+  font-size: 40px;
+}
+.agency-links a span {
+  color: #ebebeb;
+}
+.agency-links a:hover span {
+  color: #b60303;
+}
+.spacer {
+  height: 70px;
 }
